@@ -23,6 +23,21 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.conteiner {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  outline: 1px solid tomato;
+}
+
+ul,
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /*Header*/
 
 /*Header Logo*/
@@ -50,6 +65,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .header-nav .link:hover,
@@ -70,6 +86,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .header-adress .link:hover,
@@ -83,9 +100,13 @@ body {
 
 .hero {
   background-color: var(--background-footer-hero);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-tittle {
+  margin-bottom: 30px;
   color: var(--main-background-color);
 
   font-weight: 900;
@@ -97,6 +118,11 @@ body {
 }
 
 .hero-button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
   background-color: var(--accent);
   color: var(--main-background-color);
 
@@ -105,7 +131,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   align-items: center;
-  text-align: center;
+  text-decoration: none;
 }
 
 .hero-button:hover,
