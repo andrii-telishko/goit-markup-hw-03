@@ -1,0 +1,258 @@
+/*Палітра кольорів
+    Фон головний -#FFFFFF;
+    Фон другорядний -#F5F4FA;
+    Футер та Hero - #2F303A;
+    Навігація та заголовни - #212121;
+    Посилання та абзаци - #757575;
+    Наведення посилань - #2196F3;
+*/
+
+/*CSS змінні*/
+
+:root {
+  --main-background-color: #ffffff;
+  --second-background-color: #f5f4fa;
+  --background-footer-hero: #2f303a;
+  --text-nav-tittle: #212121;
+  --text-links: #757575;
+  --accent: #2196f3;
+}
+
+body {
+  background-color: var(--main-background-color);
+  font-family: Roboto, sans-serif;
+}
+
+/*Header*/
+
+/*Header Logo*/
+
+.logo {
+  color: var(--accent);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.studio-header {
+  color: var(--text-nav-tittle);
+}
+
+/*Navigation*/
+
+.header-nav .link {
+  color: var(--text-nav-tittle);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-nav .link:hover,
+.header-nav .link:focus {
+  color: var(--accent);
+}
+
+.header-nav .link.current {
+  color: var(--text-nav-tittle);
+}
+
+/*Header adress*/
+
+.header-adress .link {
+  color: var(--text-links);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-adress .link:hover,
+.header-adress .link:focus {
+  color: var(--accent);
+}
+
+/*Main*/
+
+/*Hero*/
+
+.hero {
+  background-color: var(--background-footer-hero);
+}
+
+.hero-tittle {
+  color: var(--main-background-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-button {
+  background-color: var(--accent);
+  color: var(--main-background-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--second-background-color);
+  color: var(--text-nav-tittle);
+}
+
+/*Features*/
+
+.feature-tittle {
+  color: var(--text-nav-tittle);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-text {
+  color: var(--text-links);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*Work section + Team*/
+
+.work-tittle,
+.team-tittle {
+  color: var(--text-nav-tittle);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*Team*/
+
+.team {
+  background-color: var(--second-background-color);
+}
+
+.name-worker {
+  color: var(--text-nav-tittle);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.work-position {
+  color: var(--text-links);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*Footer*/
+
+/*Logo*/
+
+.footer {
+  background-color: var(--background-footer-hero);
+}
+/*Footer Logo*/
+
+.studio-footer {
+  color: var(--main-background-color);
+}
+
+/*Footer Adress*/
+
+.adress {
+  color: var(--main-background-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-adress .link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-adress .link:hover,
+.footer-adress .link:focus {
+  color: var(--accent);
+}
+
+/*Portfolio*/
+
+/*Main*/
+
+/*Buttons*/
+
+.portfolio-button .link {
+  background-color: var(--second-background-color);
+  color: var(--text-nav-tittle);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-button .link:hover,
+.portfolio-button .link:focus {
+  background-color: var(--accent);
+  color: var(--main-background-color);
+}
+
+/*Portfolio Images*/
+
+.img-tittle {
+  color: var(--text-nav-tittle);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project {
+  color: var(--text-links);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
