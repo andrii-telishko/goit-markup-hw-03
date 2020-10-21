@@ -29,7 +29,6 @@ body {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 1px solid tomato;
 }
 
 ul,
@@ -40,11 +39,34 @@ p {
   margin-bottom: 0;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .link {
   text-decoration: none;
 }
 
+.section-features, .work-section, .team, .portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-tittle, .team-tittle {
+  margin-bottom: 50px;
+}
+
+ .img {
+    display: block;
+  }
+
 /*Header*/
+
+.header>.conteiner {
+  display: flex;
+  align-items: center;
+}
 
 /*Header Logo*/
 
@@ -66,7 +88,24 @@ p {
 
 /*Navigation*/
 
+.head-navigation {
+  margin-left: 93px;
+}
+
+.header-nav {
+  display: flex;
+  
+}
+
+.header-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--text-nav-tittle);
 
   font-weight: 500;
@@ -85,6 +124,15 @@ p {
 }
 
 /*Header adress*/
+
+.header-adress {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-adress .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .header-adress .link {
   color: var(--text-links);
@@ -106,10 +154,12 @@ p {
 /*Hero*/
 
 .hero {
-  background-color: var(--background-footer-hero);
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-color: var(--background-footer-hero);
+
+  text-align: center;
 }
 
 .hero-tittle {
@@ -122,7 +172,6 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .hero-button {
@@ -150,14 +199,16 @@ p {
 
 /*Features*/
 
-.section-features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.features {
+  display: flex;
+}
+
+.features>.item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .feature-tittle {
   margin-bottom: 10px;
-
   color: var(--text-nav-tittle);
 
   font-weight: 700;
@@ -179,12 +230,17 @@ p {
 /*Work section + Team*/
 
 .work-section {
-  padding-bottom: 94px;
+  padding-top: 0;
+}
+
+.work-img {
+  display: flex;
+  justify-content: space-between;
 }
 
 .work-tittle,
 .team-tittle {
-  margin-bottom: 50px;
+  
   color: var(--text-nav-tittle);
 
   font-weight: 700;
@@ -197,16 +253,22 @@ p {
 /*Team*/
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--second-background-color);
 }
 
 .team-list .list-item {
-  padding-bottom: 30px;
+   background-color: var(--main-background-color);
+}
 
-  background-color: var(--main-background-color);
+.team-list {
+  display: flex;
+  justify-content: space-between;
+
+  text-align: center;
+}
+
+.team-list>.list-item {
+  padding-bottom: 30px;
 }
 
 .name-worker {
@@ -218,7 +280,6 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -228,7 +289,6 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -239,9 +299,15 @@ p {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
   background-color: var(--background-footer-hero);
 }
 /*Footer Logo*/
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
 
 .studio-footer {
   color: var(--main-background-color);
@@ -249,9 +315,12 @@ p {
 
 /*Footer Adress*/
 
-.adress {
-  margin-top: 20px;
+.email {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
 
+.adress {
   color: var(--main-background-color);
 
   font-style: normal;
@@ -263,7 +332,6 @@ p {
 
 .footer-adress {
   list-style-type: none;
-  padding: 0px;
 }
 
 .footer-adress .link {
@@ -281,25 +349,11 @@ p {
   color: var(--accent);
 }
 
-.footer-adress .list-item {
-  margin-top: 9px;
-}
-
 /*Portfolio*/
 
 /*Main*/
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /*Buttons*/
-
-.portfolio-button {
-  text-align: center;
-  margin-bottom: 34px;
-}
 
 .portfolio-button .link {
   display: inline-block;
@@ -316,6 +370,8 @@ p {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  cursor: pointer;
 }
 
 .portfolio-button .link:hover,
@@ -326,14 +382,36 @@ p {
 
 /*Portfolio Images*/
 
-.portfolio-list .list-item {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-}
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  }
 
-.img-tittle {
-  margin-top: 20px;
-  margin-bottom: 4px;
+  .portfolio-button>.item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-list>.list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+
+   .portfolio-list>.list-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 30px;
+  }
+
+  .img-description {
+    margin: 20px 24px;
+  }
+  
+  .img-tittle {
+    margin-bottom: 4px;
+
   color: var(--text-nav-tittle);
 
   font-weight: 700;
@@ -349,4 +427,5 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-}
+  
+  
