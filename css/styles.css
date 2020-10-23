@@ -299,12 +299,11 @@ ul {
 /*Logo*/
 
 .footer {
-  height: 252px;
-
   background-color: var(--background-footer-hero);
 }
 
 .footer > .conteiner {
+  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
