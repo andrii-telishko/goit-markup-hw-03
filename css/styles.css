@@ -299,10 +299,14 @@ ul {
 /*Logo*/
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  height: 252px;
 
   background-color: var(--background-footer-hero);
+}
+
+.footer > .conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /*Footer Logo*/
 
@@ -317,12 +321,9 @@ ul {
 
 /*Footer Adress*/
 
-.email {
-  margin-top: 9px;
-  margin-bottom: 9px;
-}
-
 .adress {
+  margin-bottom: 9px;
+
   color: var(--main-background-color);
 
   font-style: normal;
@@ -330,6 +331,10 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-adress > .list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-adress {
@@ -399,16 +404,18 @@ ul {
   flex-wrap: wrap;
 }
 
+.img-description {
+  border: 1px solid #eeeeee;
+
+  padding: 20px 24px;
+}
+
 .portfolio-list > .list-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
 .portfolio-list > .list-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
-}
-
-.img-description {
-  margin: 20px 24px;
 }
 
 .img-tittle {
