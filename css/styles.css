@@ -123,7 +123,7 @@ ul {
 }
 
 .header-nav .link.current {
-  color: var(--text-nav-tittle);
+  color: var(--accent);
 }
 
 /*Header adress*/
@@ -356,6 +356,10 @@ ul {
 }
 
 /*Portfolio*/
+
+.portfolio-header {
+  border-bottom: 1px solid #eeeeee;
+}
 
 /*Main*/
 
